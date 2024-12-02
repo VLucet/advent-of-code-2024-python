@@ -1,5 +1,6 @@
 # Libraries
 import pandas as pd
+from collections import Counter
 
 # Importing data
 ex1 = pd.read_csv('data/day1-ex1.txt', sep='   ', engine='python', header=None, 
@@ -24,8 +25,6 @@ sort_distance_sum(dat)
 
 # Part 2
 # ------
-
-from collections import Counter
 
 def similarity_score (df):
     counts = Counter(df.b)
